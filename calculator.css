@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #d3d3d3;
+    margin: 0px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+button, input {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+.theme {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    color:#F9CB43;
+    font-weight: 400;
+    
+}
+
+.dark-theme .theme {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-theme .theme:hover {
+    background-color: #555;
+}
+
+button.theme:hover {
+    background-color: #FFFECE;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: #f0f0f0;
+    border-radius: 24px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+
+    width: 400px;
+    height: 550px;
+    padding: 0px 40px 0px 40px;
+
+}
+
+.outputs {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    font-weight: 400;
+    
+
+    font-size: 28px;
+    text-align: right;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0px 0px 30px 0px;
+    background-color: #e0e0e0;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+}
+
+button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+}
+
+.clear {
+    background-color: #BE5985;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #FFB8E0;
+}
+
+.operator {
+    background-color: #333;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #555;
+}
+
+.dark-theme {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-theme .main-body {
+    background-color: #2c2c2c;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme input {
+    background-color: #444;
+    color: #ffffff;
+    box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme button {
+    background-color: #444;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme button.clear {
+    background-color: #522546;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme button.clear:hover {
+    background-color: #88304E;
+}
+
+.dark-theme button.operator {
+    background-color: #d3d3d3;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05);
+}
+.dark-theme button.operator:hover {
+    background-color: #9f9f9f;
+}
+
+.dark-theme button:hover {
+    background-color: #555;
+}
+.dark-theme button:active {
+    box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.05);
+    transform: scale(0.95);
+}

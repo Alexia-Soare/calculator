@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link href="calculator.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <button class="theme" id="themeID" onclick="changeTheme()">☀︎</button>
+
+    <div class="main-body">
+
+        <div class="outputs">
+            <input value="0" id="results">
+        </div>
+
+        <div class="inputs">
+
+            <button onclick="number(this)" data-value="7">7</button>
+            <button onclick="number(this)" data-value="8">8</button>
+            <button onclick="number(this)" data-value="9">9</button>
+            <button class="operator" onclick="operatorFunction(this)">+</button>
+
+
+
+            <button onclick="number(this)" data-value="4">4</button>
+            <button onclick="number(this)" data-value="5">5</button>
+            <button onclick="number(this)" data-value="6">6</button>
+            <button class="operator" onclick="operatorFunction(this)">-</button>
+
+
+
+            <button onclick="number(this)" data-value="1">1</button>
+            <button onclick="number(this)" data-value="2">2</button>
+            <button onclick="number(this)" data-value="3">3</button>
+            <button class="operator" onclick="operatorFunction(this)">*</button>
+
+
+
+            <button class="clear" onclick="clearResults()">C</button>
+            <button onclick="number(this)" data-value="0">0</button>
+            <button class="operator" onclick="equalFunction()">=</button>
+            <button class="operator" onclick="operatorFunction(this)">/</button>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="calculator.js"></script>
+</body>
+
+
+
+</html>
